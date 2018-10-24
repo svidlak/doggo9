@@ -9,3 +9,9 @@
 img {
     width: 500px;
 }
+
+@media (max-width: 600px) {
+    img{
+        width: 100%;
+    }
+}

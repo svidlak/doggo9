@@ -13,7 +13,8 @@ class Content extends Component {
                             <div className="card-body" key={index}>
                                 <h5 className="card-title">{cont.title}</h5>
                                 {
-                                    cont.img ? <img src={cont.img} /> : ''
+                                    // this is image element
+                                    cont.img ? <img src={cont.img} alt={cont.title} /> : ''
                                 }
                                 <p className="card-text">{cont.content}</p>
                                 <button type="button" className="btn btn-primary btn-padding">Comment</button>
