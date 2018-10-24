@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 class Navbar extends Component {
     updateContent = (index) => {
         this.props.updateContent(index);
+        console.log(this.refs);
+        const x = this.refs.navbarCollapse ? this.refs.navbarCollapse.className = 'navbar-collapse collapse' : '';
     };
 
     render(){
@@ -14,7 +16,7 @@ class Navbar extends Component {
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarCollapse">
+                <div className="collapse navbar-collapse" id="navbarCollapse" ref="navbarCollapse">
                     <ul className="navbar-nav mr-auto d-block d-sm-none">
                         {
                             this.props.categories.map((cat, index) => {
