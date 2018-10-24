@@ -1,0 +1,33 @@
+.container{
+  margin-top: 100px;
+}
+
+ul{
+  list-style: none;
+}
+
+.cat{
+  color: #000;
+  font-size: 14px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0 8px 36px;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  border-radius: 2px;
+  transition: background-color .15s,padding-right .15s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.cat:hover{
+  background: #f7f7f7;
+}
+
+.active{
+  background: #f7f7f7;
+}
