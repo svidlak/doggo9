@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Navbar extends Component {
     updateContent = (index) => {
         this.props.updateContent(index);
-        console.log(this.refs);
         const x = this.refs.navbarCollapse ? this.refs.navbarCollapse.className = 'navbar-collapse collapse' : '';
     };
 
