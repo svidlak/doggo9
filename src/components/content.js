@@ -12,6 +12,9 @@ class Content extends Component {
                         return(
                             <div className="card-body" key={index}>
                                 <h5 className="card-title">{cont.title}</h5>
+                                {
+                                    cont.img ? <img src={cont.img} /> : ''
+                                }
                                 <p className="card-text">{cont.content}</p>
                                 <button type="button" className="btn btn-primary btn-padding">Comment</button>
                                 <button type="button" className="btn btn-light btn-padding">Share</button>

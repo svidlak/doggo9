@@ -5,3 +5,7 @@
 .card-body{
     border-bottom: 1px solid black;
 }
+
+img {
+    width: 500px;
+}
